@@ -12,8 +12,8 @@ A tiny Clojure utility library with six helper functions for using
 ``` clojure
 (require '[com.gfredericks.compare :as compare])
 
-(>= "foo" "bar") ;; => true
-(min ["z"] ["h"] ["m"]) ;; => ["h"]
+(compare/>= "foo" "bar") ;; => true
+(compare/min ["z"] ["h"] ["m"]) ;; => ["h"]
 ```
 
 ## License
