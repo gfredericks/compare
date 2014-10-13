@@ -75,7 +75,7 @@
    (reduce #(min-key k %1 %2) (min-key k x y) more)))
 
 (defn max-key
-  "Returns the x for which (k x) is least, according to
+  "Returns the x for which (k x) is greatest, according to
   clojure.core/compare."
   ([k x] x)
   ([k x y] (if (> (k x) (k y)) x y))
