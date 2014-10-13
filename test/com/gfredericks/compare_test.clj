@@ -6,11 +6,11 @@
 (deftest the-only-test
   ;; totally exhaustive
   (are [expr value] (= expr value)
-       (compare/max "foo" "bar" "_") "foo"
-       (compare/max :hey) :hey
+       (max "foo" "bar" "_") "foo"
+       (max :hey) :hey
 
-       (compare/min "seven") "seven"
-       (compare/min [8 110] [7 11] [9 9]) [7 11]
+       (min "seven") "seven"
+       (min [8 110] [7 11] [9 9]) [7 11]
 
        (< :x93) true
        (< :x90 :z) true
