@@ -1,4 +1,4 @@
-(defproject com.gfredericks/compare "0.1.2"
+(defproject com.gfredericks/compare "0.1.3-SNAPSHOT"
   :description "Helper functions for clojure.core/compare"
   :url "https://github.com/gfredericks/compare"
   :license {:name "Eclipse Public License"
