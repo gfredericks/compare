@@ -1,7 +1,7 @@
 (ns com.gfredericks.compare-test
-  (:refer-clojure :exclude [max min < > <= >=])
+  (:refer-clojure :exclude [< > <= >= min max min-key max-key])
   (:require [clojure.test :refer :all]
-            [com.gfredericks.compare :refer [max min < > <= >=]]))
+            [com.gfredericks.compare :refer [< > <= >= min max min-key max-key]]))
 
 (deftest the-only-test
   ;; totally exhaustive
@@ -22,4 +22,12 @@
        (> [100 0] [40 40]) true
 
        (>= :x :x :x :x :x :x :x :a) true
-       (>= :x :x :x :x :x :x :x :z) false))
+       (>= :x :x :x :x :x :x :x :z) false
+
+       (min-key #(subvec % 1) [20 30] [30 1] [10 10]) [30 1]
+
+       (max-key second
+                ["foo" "bar" "Baz"]
+                ["sake" "chomp"]
+                ["welll" "aa" "aa" "aa"])
+       ["sake" "chomp"]))
