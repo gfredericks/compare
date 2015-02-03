@@ -8,7 +8,7 @@ Each works just like the corresponding function in `clojure.core`, but
 accepts arbitrary `Comparable` objects like `clojure.core/compare`,
 instead of only numbers.
 
-## Obtainage
+## Obtention
 
 `[com.gfredericks/compare "0.1.2"]`
 
