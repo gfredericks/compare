@@ -1,8 +1,8 @@
 # compare
 
-A tiny Clojure utility library with eight helper functions for using
-`clojure.core/compare`: `<`, `>`, `<=`, `>=`, `min`, `max`, `min-key`,
-and `max-key`.
+A tiny Clojure[Script] utility library with eight helper functions for
+using `clojure.core/compare`: `<`, `>`, `<=`, `>=`, `min`, `max`,
+`min-key`, and `max-key`.
 
 Each works just like the corresponding function in `clojure.core`, but
 accepts arbitrary `Comparable` objects like `clojure.core/compare`,
