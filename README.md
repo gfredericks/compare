@@ -10,7 +10,7 @@ instead of only numbers.
 
 ## Obtention
 
-`[com.gfredericks/compare "0.1.2"]`
+`[com.gfredericks/compare "0.1.3"]`
 
 ## Usage
 
